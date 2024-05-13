@@ -60,10 +60,6 @@ img {
   background-repeat: no-repeat;
   background-position: left -20%;
   scrollbar-gutter: stable;
-  background: url(../../test-images/Mobile.png) top center no-repeat;
-}
-main {
-  opacity: 0.1;
 }
 .main-logo {
   margin: 2.5rem auto 0 1.5rem;
