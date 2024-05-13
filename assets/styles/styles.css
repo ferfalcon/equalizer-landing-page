@@ -24,8 +24,8 @@
   --ty-copy-main: var(--fw-regular) var(--fs-200)/var(--lh-600) var(--ff-main);
   --ty-heading-secondary: var(--fw-bold) var(--fs-600) var(--ff-main);
   --ty-copy-secondary: var(--fw-regular) var(--fs-300)/var(--lh-500) var(--ff-main);
+  --ty-price: var(--fw-regular) var(--fs-400) var(--ff-main);
   --ty-price-amount: var(--fw-bold) var(--fs-850) var(--ff-main);
-  --ty-price-amount: var(--fw-regular) var(--fs-400) var(--ff-main);
   --ty-button: var(--fw-bold) var(--fs-300) var(--ff-main);
   --ty-footer: var(--fw-regular) var(--fs-200)/var(--lh-600) var(--ff-main);
   --cl-accent-100: hsl(177, 68%, 64%);
@@ -55,7 +55,10 @@ img {
   align-content: center;
   margin: 0;
   min-height: 100svh;
-  background: var(--cl-neutral-200);
+  background-color: var(--cl-neutral-200);
+  background-image: url('../images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left -20%;
   scrollbar-gutter: stable;
 }
 .main-logo {
@@ -80,8 +83,12 @@ img {
   grid-column: 1;
   grid-row: 2/5;
   z-index: -1;
-  background: var(--cl-neutral-800);
-  border-radius: 0.75rem;
+  background-color: var(--cl-neutral-800);
+  background-image: url('../images/bg-pattern-2.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 75%;
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 .premiun-section-wrapper__banner {
   grid-column: 1;
@@ -109,6 +116,16 @@ img {
   font: var(--ty-copy-secondary);
   margin-block: 0.75rem 0;
 }
+.premiun-section__price {
+  font: var(--ty-price);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2.25rem 0;
+}
+.premiun-section__price-amount {
+  font: var(--ty-price-amount);
+}
 .premiun-section__button {
   font: var(--ty-button);
   border-radius: 0.75rem;
@@ -122,7 +139,7 @@ img {
 .premiun-section__button--ios {
   background: var(--cl-neutral-800);
   color: var(--cl-neutral-200);
-  margin-bottom: 0.75rem;
+  margin-top: 2.25rem;
 }
 .premiun-section__button--ios:hover {
   background: var(--cl-accent-100);
@@ -130,6 +147,7 @@ img {
 .premiun-section__button--android {
   background: var(--cl-neutral-200);
   color: var(--cl-neutral-800);
+  margin-top: 0.75rem;
 }
 .premiun-section__button--android:hover {
   background: var(--cl-accent-900);
